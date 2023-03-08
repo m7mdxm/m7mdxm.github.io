@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <form action="https://sheetdb.io/api/v1/9mjjjos5l7thg" method="post" id="sheetdb-form">  <!-- onsubmit="sandEmail(); reset(); return false;" -->
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" placeholder="Your Name" name="data[Name]" required>
+            <input type="text" id="discord" placeholder="Discord: eg: M7MD#1069" name="data[Discord]"required>
+            <input type="email" id="email" placeholder="Email id (optinal)" name="data[Email]">
+            <input type="text" id="phone" placeholder="Phone no. (optinal)" name="data[Phone no.]">
+            <textarea id="message" rows="4" placeholder="How can i help you?" name="data[Message]"required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
